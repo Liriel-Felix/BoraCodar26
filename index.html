@@ -34,13 +34,13 @@
         <div class="buttons">
           <span>Porções</span>
 
-          <button id="button.less">
+          <button id="button.less" onclick="decreaseCounter()">
             <img src="./assets/less.svg" alt="Botão menos" />
           </button>
 
           <p id="counter">01</p>
 
-          <button id="button.plus">
+          <button id="button.plus" onclick="increaseCounter()">
             <img src="./assets/plus.svg" alt="Botão mais" />
           </button>
         </div>
@@ -48,32 +48,37 @@
     </section>
 
     <section class="bottom">
-      <div>
-        <div class="coluna1">
+      <div class="coluna1">
+        <div>
           <img src="./assets/bag.svg" alt="Ícone cesta de mercado" />
+
           <h1>Ingredientes</h1>
-          <!-- Lista não-ordenada -->
-          <ul>
-            <li>1 espiga de milho verde</li>
-            <li>1 colher de sopa de açúcar</li>
-            <li>1 colher de sopa de manteiga</li>
-            <li>Sal a gosto</li>
-            <li>Palha de milho (para embrulhar)</li>
-          </ul>
         </div>
 
-        <div class="coluna2">
+        <!-- Lista não-ordenada -->
+        <ul>
+          <li>1 espiga de milho verde</li>
+          <li>1 colher de sopa de açúcar</li>
+          <li>1 colher de sopa de manteiga</li>
+          <li>Sal a gosto</li>
+          <li>Palha de milho (para embrulhar)</li>
+        </ul>
+      </div>
+
+      <div class="coluna2">
+        <div>
           <img src="./assets/pan.svg" alt="ícone de panela" />
           <h1>Modo de preparo</h1>
-          <!-- Lista ordenada -->
-          <ol>
-            <li>Descasque a espiga de milho e corte os grãos.</li>
-            <li>Bata o milho, açúcar, manteiga e sal no liquidificador.</li>
-            <li>Coloque a massa nas palhas de milho e feche bem.</li>
-            <li>Cozinhe em água fervente por cerca de 40 minutos.</li>
-            <li>Deixe esfriar e sirva.</li>
-          </ol>
         </div>
+
+        <!-- Lista ordenada -->
+        <ol>
+          <li>Descasque a espiga de milho e corte os grãos.</li>
+          <li>Bata o milho, açúcar, manteiga e sal no liquidificador.</li>
+          <li>Coloque a massa nas palhas de milho e feche bem.</li>
+          <li>Cozinhe em água fervente por cerca de 40 minutos.</li>
+          <li>Deixe esfriar e sirva.</li>
+        </ol>
       </div>
     </section>
   </body>
